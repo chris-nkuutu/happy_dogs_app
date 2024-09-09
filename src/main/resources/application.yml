@@ -1,0 +1,11 @@
+spring:
+  application:
+   name: happy_dogs_app
+  datasource:
+    url: jdbc:mysql://localhost:3306/happy_dogs_app
+
+    username: root
+    password: rootroot
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
