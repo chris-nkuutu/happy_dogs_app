@@ -30,7 +30,7 @@ document.getElementById("save-button").addEventListener("click", async () => {
 
     if (response.ok){
         document.getElementById("name-input").value = '';
-//Lägg kod
+getPersons();
     } else {
         console.error("Failed to save person")
     }
