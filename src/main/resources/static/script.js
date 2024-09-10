@@ -30,7 +30,7 @@ document.getElementById("save-button").addEventListener("click", async () => {
 
     if (response.ok){
         document.getElementById("name-input").value = '';
-getPersons();
+getPersons(); //hoppas att det funka nu
     } else {
         console.error("Failed to save person")
     }
