@@ -11,7 +11,7 @@ phases:
       - export PATH=$JAVA_HOME/bin:$PATH
   build:
     commands:
-      - mvn clean install
+      - mvn clean install -U
   post_build:
     commands:
       -echo Build complete

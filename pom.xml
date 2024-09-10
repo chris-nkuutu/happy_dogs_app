@@ -73,21 +73,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.9.22.1</version>
 		</dependency>
-		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>s3</artifactId>
-			<version>2.20.140</version> <!-- Replace with the latest version if needed -->
-		</dependency>
-		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>auth</artifactId>
-			<version>2.20.140</version>
-		</dependency>
-		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>core</artifactId>
-			<version>2.20.140</version>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/protocol-core -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
