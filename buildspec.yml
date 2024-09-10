@@ -14,7 +14,8 @@ phases:
       - mvn clean install -U
   post_build:
     commands:
-      -echo Build complete
+      - echo "Build complete"
+
 
 artifacts:
   files:
