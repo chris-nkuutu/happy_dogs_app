@@ -30,7 +30,7 @@ document.getElementById("save-button").addEventListener("click", async () => {
 
     if (response.ok){
         document.getElementById("name-input").value = '';
-//Tog bort getPersons här och det funkade bra.
+//Lägg kod
     } else {
         console.error("Failed to save person")
     }
