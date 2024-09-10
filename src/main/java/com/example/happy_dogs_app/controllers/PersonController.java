@@ -15,11 +15,6 @@ public class PersonController {
 
     private final PersonService personService;
 
-    @GetMapping("/home")
-    public String getHomePage() {
-        return "home";
-    }
-
     @PostMapping()
     public ResponseEntity<String> createPerson(@RequestBody PersonDTO requestBody) {
         var created = personService.createPerson(requestBody);
@@ -31,9 +26,9 @@ public class PersonController {
     }
 
     @GetMapping
-    public ResponseEntity<Iterable<Person>> getAllPersons() {
-        var person = personService.getAllPersons();
-        return new ResponseEntity<>(person, HttpStatus.OK);
+    public ResponseEntity<Iterable<PersonDTO>> getAllPersons() {
+        var persons = personService.getAllPersons();
+        return new ResponseEntity<>(persons, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
