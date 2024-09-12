@@ -28,11 +28,12 @@ document.getElementById("save-button").addEventListener("click", async () => {
         body: personJson
     });
 
-    if (response.ok){
+    if (response.ok) {
+        // Clear input and refresh persons
         document.getElementById("name-input").value = '';
-getPersons(); //hoppas att det funka nu för att det är viktig
+        await getPersons(); // Ensure getPersons is awaited if it's async
+        console.log("Person saved successfully");
     } else {
-        console.error("Failed to save person")
+        console.error("Failed to save person");
     }
-
 });

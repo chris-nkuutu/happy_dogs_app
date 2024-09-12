@@ -81,10 +81,6 @@
 			<version>2.27.15</version>
 		</dependency>
 
-
-
-
-
 	</dependencies>
 
 	<build>
