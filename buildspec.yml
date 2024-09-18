@@ -20,6 +20,6 @@ phases:
 artifacts:
   files:
     - target/*.jar
-    - scripts/*.sh
+    - script/*.sh
     - appspec.yml
   discard-paths: yes
